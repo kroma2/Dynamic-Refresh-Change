@@ -17,9 +17,9 @@ This setup allows you to dynamically switch your monitor's refresh rate using Wi
    - Modify the lines containing `R:144` and `R:60` to your desired refresh rates.
    - Example:
      ```powershell
-     $targetRate = "R:120"  # Change to desired rate
+     -ArgumentList "/R:x"  # Change x to desired rate
      ```
-
+   The first one is when plugged, the second one when unplugged
 ## ⚠️ Notes
 
 - Make sure PowerShell scripts are allowed to run on your system. You may need to set the execution policy:
