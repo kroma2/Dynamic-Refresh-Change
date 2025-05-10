@@ -19,6 +19,13 @@ Place the following files in the root of your `C:\` drive:
 4. During import:
    - Set **"When running the task, use the following user account"** to **your current user account**.
    - Check **"Run with highest privileges"**, if it's not already checked.
+## 🛠️ Customizing Refresh Rates
+
+Inside the `SetRefreshRate.ps1` script, you'll find lines like:
+
+```powershell
+.\QRes.exe /R:144
+.\QRes.exe /R:60
 
 ## ✅ Final Checks
 
@@ -28,3 +35,15 @@ Place the following files in the root of your `C:\` drive:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+```
+
+## 🔧 Troubleshooting
+- Task not triggering? Check task triggers, paths, and account permissions.
+- Script not running? Verify execution policy and file locations.
+- Wrong refresh rate applied? Double-check the values in SetRefreshRate.ps1.
+
+📄 License
+This project is provided as-is. You are free to use, modify, and redistribute it.
+
+
